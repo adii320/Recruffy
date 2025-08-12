@@ -910,21 +910,31 @@
             }
             
             .stats-section {
-                padding: 3rem 0;
+                padding: 2.5rem 0; /* Reduced from 3rem */
             }
             
             .stat-card {
-                padding: 1.5rem;
-                margin-bottom: 2rem;
+                padding: 1rem; /* Reduced from 1.5rem */
+                margin-bottom: 1.5rem; /* Reduced from 2rem */
             }
             
             .stat-number {
-                font-size: 2.5rem;
+                font-size: 2.2rem; /* Slightly reduced from 2.5rem */
+                margin-bottom: 0.3rem; /* Added to reduce gap */
+            }
+            
+            .stat-label {
+                font-size: 0.9rem;
+                margin-top: 0.3rem; /* Reduced from default */
             }
             
             .section-title {
                 font-size: 2rem;
-                margin-bottom: 2rem;
+                margin-bottom: 1.5rem; /* Reduced from 2rem */
+            }
+            
+            .section-title::after {
+                bottom: -8px; /* Reduced gap */
             }
             
             .job-card {
@@ -979,21 +989,29 @@
             }
             
             .how-it-works {
-                padding: 4rem 0;
+                padding: 3rem 0; /* Reduced from 4rem */
+            }
+            
+            .step-card {
+                margin-bottom: 2rem; /* Reduced from 3rem */
+                padding: 1.5rem; /* Added padding control */
             }
             
             .step-number {
                 width: 60px;
                 height: 60px;
                 font-size: 1.5rem;
+                margin-bottom: 1.2rem; /* Reduced from 2rem */
             }
             
             .step-title {
                 font-size: 1.2rem;
+                margin-bottom: 0.8rem; /* Reduced spacing */
             }
             
             .step-description {
                 font-size: 0.9rem;
+                line-height: 1.4; /* Tighter line height */
             }
             
             .category-card {
@@ -1258,6 +1276,42 @@
         @media (max-width: 375px) {
             .hero-section {
                 padding-top: 7.5rem; /* Extra padding for very small screens */
+            }
+            
+            .stats-section {
+                padding: 1.5rem 0; /* Minimal padding for tiny screens */
+            }
+            
+            .stat-card {
+                padding: 0.6rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+                margin-bottom: 0.1rem;
+            }
+            
+            .how-it-works {
+                padding: 2rem 0; /* Minimal padding */
+            }
+            
+            .step-card {
+                margin-bottom: 1.2rem;
+                padding: 1rem;
+            }
+            
+            .step-number {
+                margin-bottom: 0.8rem;
+            }
+            
+            .step-title {
+                margin-bottom: 0.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
             }
             
             .hero-title {
